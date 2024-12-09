@@ -1,27 +1,34 @@
 {
-    "name": "myexpress",
+    "name": "Youtweet",
     "version": "1.0.0",
-    "description": "A learning project",
-    "main": "index.js",
+    "description": "YouTweet is a backend-focused Social Sharing API, inspired by features of Youtube and twitter. The primary goal is to understand and implement backend technologies like authenticaion, authorization, video upload management and scalable architecture.",
+    "main": "src/index.js",
     "type": "module",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node index.js",
+        "start": "node src/index.js",
         "dev": "nodemon start"
     },
     "keywords": [
-        "Backend"
+        "backend",
+        "nodejs",
+        "mongoose",
+        "express"
     ],
     "author": "Saksham",
     "license": "ISC",
-    "dependencies": {
-        "cors": "^2.8.5",
-        "express": "^4.21.2",
-        "mongoose": "^8.8.4",
-        "myexpress": "file:"
-    },
     "devDependencies": {
+        "nodemon": "^3.1.7",
+        "prettier": "^3.4.2"
+    },
+    "dependencies": {
+        "": "file:",
+        "cors": "^2.8.5",
         "dotenv": "^16.4.7",
-        "nodemon": "^3.1.7"
+        "express": "^4.21.2",
+        "install": "^0.13.0",
+        "mongoose": "^8.8.4",
+        "mongoose-paginate-v2": "^1.8.5",
+        "youtwit": "file:"
     }
 }
