@@ -1,12 +1,12 @@
 {
-    "name": "Youtweet",
+    "name": "youtweet",
     "version": "1.0.0",
     "description": "YouTweet is a backend-focused Social Sharing API, inspired by features of Youtube and twitter. The primary goal is to understand and implement backend technologies like authenticaion, authorization, video upload management and scalable architecture.",
-    "main": "src/index.js",
+    "main": "index.js",
     "type": "module",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node src/index.js",
+        "start": "node index.js",
         "dev": "nodemon start"
     },
     "keywords": [
@@ -29,6 +29,6 @@
         "install": "^0.13.0",
         "mongoose": "^8.8.4",
         "mongoose-paginate-v2": "^1.8.5",
-        "youtwit": "file:"
+        "youtweet": "file:"
     }
 }
