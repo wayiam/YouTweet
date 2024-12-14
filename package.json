@@ -1,39 +1,39 @@
 {
-    "name": "youtweet",
-    "version": "1.0.0",
-    "description": "YouTweet is a backend-focused Social Sharing API, inspired by features of Youtube and twitter. The primary goal is to understand and implement backend technologies like authenticaion, authorization, video upload management and scalable architecture.",
-    "main": "index.js",
-    "type": "module",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node index.js",
-        "dev": "nodemon start"
-    },
-    "keywords": [
-        "backend",
-        "nodejs",
-        "mongoose",
-        "express"
-    ],
-    "author": "Saksham",
-    "license": "ISC",
-    "devDependencies": {
-        "nodemon": "^3.1.7",
-        "prettier": "^3.4.2"
-    },
-    "dependencies": {
-        "": "file:",
-        "bcryptjs": "^2.4.3",
-        "cloudinary": "^2.5.1",
-        "cookie-parser": "^1.4.7",
-        "cors": "^2.8.5",
-        "dotenv": "^16.4.7",
-        "express": "^4.21.2",
-        "install": "^0.13.0",
-        "jsonwebtoken": "^9.0.2",
-        "mongoose": "^8.8.4",
-        "mongoose-paginate-v2": "^1.8.5",
-        "multer": "^1.4.5-lts.1",
-        "youtweet": "file:"
-    }
+  "name": "youtweet",
+  "version": "1.0.0",
+  "description": "YouTweet is a backend-focused Social Sharing API, inspired by features of Youtube and twitter. The primary goal is to understand and implement backend technologies like authenticaion, authorization, video upload management and scalable architecture.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon start"
+  },
+  "keywords": [
+    "backend",
+    "nodejs",
+    "mongoose",
+    "express"
+  ],
+  "author": "Saksham",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "prettier": "^3.4.2"
+  },
+  "dependencies": {
+    "": "file:",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.5.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.4",
+    "mongoose-paginate-v2": "^1.8.5",
+    "multer": "^1.4.5-lts.1",
+    "youtweet": "file:"
+  }
 }
