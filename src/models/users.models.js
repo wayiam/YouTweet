@@ -32,7 +32,7 @@ const userSchema = new Schema({
     coverImage: {
         type: String,
     },
-    refreshToken: {
+    accessToken: {
         type: String,
         required: true,
     },
@@ -63,7 +63,7 @@ userSchema.methods.isPasswordCorrect = async function(password) {
     return await bcrypt.compare(password, this.password);
 };
 
-userSchema.methods.generateAcessToken = async function() {
+userSchema.methods.generateAccessToken = async function() {
     //short time web token generation
     return jwt.sign({
             _id: this._id,
@@ -79,11 +79,8 @@ userSchema.methods.generateRefreshToken = async function() {
     //short time web token generation
     return jwt.sign({
             _id: this._id,
-            email: this.email,
-            username: this.username,
         },
-        process.env.REFRESH_TOKEN_SECRET,
-        process.env.REFRESH_TOKEN_EXPIRY,
+        process.env.REFRESH_TOKEN_SECRET, { expiresIn: process.env.REFRESH_TOKEN_EXPIRY }
     );
 };
 
