@@ -1,28 +1,30 @@
-Here’s the updated **README** with the new **User Routes** section based on the routes you provided:
-
 ```markdown
 # YouTweet API
 
-**YouTweet** is a robust backend-focused social sharing API, inspired by the features of both YouTube and Twitter. Designed with scalability and security in mind, YouTweet allows users to upload and manage videos, interact socially, and maintain a personalized profile. The API is built using modern technologies like **Node.js**, **Express.js**, and **MongoDB**, ensuring a seamless and responsive experience.
-This API supports secure user authentication, media management, and dynamic social interactions, making it ideal for building content-driven communities or media sharing platforms.
+**YouTweet** is a robust backend-focused social sharing API, inspired by the features of both YouTube and Twitter.
+Designed with scalability and security in mind, YouTweet allows users to upload and manage videos, interact socially,
+and maintain a personalized profile. The API is built using modern technologies like **Node.js**, **Express.js**,
+and **MongoDB**, ensuring a seamless and responsive experience.
+This API supports secure user authentication, media management, and dynamic social interactions  making it ideal for building
+content-driven communities or media sharing platforms.
 
 ---
 
 ## Features
 
-- **User Authentication and Authorization:**
+- **User Authentication and Authorization**
   - Sign up, log in, and manage accounts securely.
   - Role-based access control for features like admin dashboards.
 
-- **Video Upload and Management:**
+- **Video Upload and Management**
   - Support for uploading videos with metadata.
   - Efficient video storage and retrieval.
 
-- **Social Interactions:**
+- **Social Interactions**
   - Like, comment, and share functionality.
   - Follower and following system to enable user interactions.
 
-- **Scalable Architecture:**
+- **Scalable Architecture**
   - Modular design for easy maintenance and scalability.
   - Integration with cloud services for video hosting.
 
@@ -30,11 +32,11 @@ This API supports secure user authentication, media management, and dynamic soci
 
 ## Tech Stack
 
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB, Mongoose
-- **Authentication:** JSON Web Tokens (JWT), bcrypt
-- **File Storage:** Multer (local setup), options for cloud storage (e.g., AWS S3, Google Cloud Storage)
-- **Environment Management:** dotenv
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB, Mongoose
+- **Authentication**: JSON Web Tokens (JWT), bcrypt for password hashing
+- **File Storage**: Multer (local setup), options for cloud storage (e.g., AWS S3, Google Cloud Storage)
+- **Environment Management**: dotenv for configuration
 
 ---
 
@@ -42,46 +44,46 @@ This API supports secure user authentication, media management, and dynamic soci
 
 1. **Clone the Repository**
 
-```bash
-git clone https://github.com/your-username/YouTweet.git
-cd YouTweet
-```
+   ```bash
+   git clone https://github.com/your-username/YouTweet.git
+   cd YouTweet
+   ```
 
 2. **Install Dependencies**
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
-3. **Setup Environment Variables**  
-Create a `.env` file in the root directory and provide the following details:
+3. **Set Up Environment Variables**  
+   Create a `.env` file in the root directory and provide the following details:
 
-```env
-PORT=5000
-MONGO_URI=mongodb://localhost:27017/youtweet
-JWT_SECRET=your_jwt_secret
-CLOUD_STORAGE_URL=your_cloud_storage_url (optional)
-```
+   ```env
+   PORT=5000
+   MONGO_URI=mongodb://localhost:27017/youtweet
+   JWT_SECRET=your_jwt_secret
+   CLOUD_STORAGE_URL=your_cloud_storage_url (optional)
+   ```
 
-4. **Run the Server**
+4. **Start the Server**
 
-```bash
-npm start
-```
+   ```bash
+   npm start
+   ```
 
-The server will start at `http://localhost:5000`.
+   The server will run at `http://localhost:5000`.
 
 ---
 
 ## API Endpoints
 
-### User Routes
+### **User Routes**
 
 - **POST** `/api/v1/users/register`  
-  Register a new user. You can also upload an avatar and cover image during registration.  
+  Register a new user. Optionally upload an avatar and cover image during registration.  
   **Fields:**  
-  - `avatar` (optional)
-  - `coverImage` (optional)
+  - `avatar` (optional)  
+  - `coverImage` (optional)  
 
 - **POST** `/api/v1/users/login`  
   Log in with credentials to receive a JWT token.
@@ -125,7 +127,7 @@ The server will start at `http://localhost:5000`.
   Get the watch history of the currently authenticated user.  
   **Authentication:** Required (JWT).
 
-### Video Routes
+### **Video Routes**
 
 - **POST** `/api/videos/upload`  
   Upload a video.
@@ -136,7 +138,7 @@ The server will start at `http://localhost:5000`.
 - **DELETE** `/api/videos/:id`  
   Delete a video (authorized).
 
-### Interaction Routes
+### **Interaction Routes**
 
 - **POST** `/api/interactions/like`  
   Like a video.
@@ -192,6 +194,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-Feel free to explore and contribute to **YouTweet**! Let us build something awesome together.
+Feel free to explore and contribute to **YouTweet**! Let’s build something amazing together.
 ```
-
