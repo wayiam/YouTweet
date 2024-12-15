@@ -3,3 +3,6 @@ node_modules/
 *.env
 .env
 .env.*
+
+# Allow .env.sample to be tracked
+!.env.sample
