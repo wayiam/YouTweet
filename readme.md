@@ -1,4 +1,4 @@
-```markdown
+
 # YouTweet API
 
 **YouTweet** is a robust backend-focused social sharing API, inspired by the features of both YouTube and Twitter.
@@ -195,4 +195,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 Feel free to explore and contribute to **YouTweet**! Let’s build something amazing together.
-```
