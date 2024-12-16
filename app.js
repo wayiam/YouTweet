@@ -5,13 +5,13 @@ import cookieParser from "cookie-parser";
 
 //Import the routes
 import userRouter from "./src/routes/user.routes.js";
-import commentRouter from "./src/routes/comment.routes.js";
+import commentRouter from "./src/routes/comment.routes.js"
 import dashboardRouter from "./src/routes/dashboard.routes.js";
 import healthCheckRouter from "./src/routes/healthCheck.routes.js";
 import likesRouter from "./src/routes/like.routes.js";
 import playlistRouter from "./src/routes/playlist.routes.js";
-import subscriptionsRouter from "./src/routes/subscription.js";
-import tweetRouter from "/src/routes/tweets.routes.js";
+import subscriptionsRouter from "./src/routes/subscription.routes.js";
+import tweetRouter from "./src/routes/tweet.routes.js";
 import videosRouter from "./src/routes/videos.routes.js";
 
 //Error Handler import
@@ -52,7 +52,7 @@ app.use("/api/v1/comment", commentRouter);
 app.use("/api/v1/dashboard", dashboardRouter);
 app.use("/api/v1/likes", likesRouter);
 app.use("/api/v1/playlist", playlistRouter);
-app.use("/api/v1/subscriptions", subscriptionsRouter);
+app.use("/api / v1 / subscriptions ", subscriptionsRouter);
 app.use("/api/v1/tweet", tweetRouter);
 app.use("/api/v1/videos", videosRouter);
 app.use("/api/v1/healthCheck", healthCheckRouter);
