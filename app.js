@@ -52,7 +52,7 @@ app.use("/api/v1/comment", commentRouter);
 app.use("/api/v1/dashboard", dashboardRouter);
 app.use("/api/v1/likes", likesRouter);
 app.use("/api/v1/playlist", playlistRouter);
-app.use("/api / v1 / subscriptions ", subscriptionsRouter);
+app.use("/api/v1/subscriptions", subscriptionsRouter);
 app.use("/api/v1/tweet", tweetRouter);
 app.use("/api/v1/videos", videosRouter);
 app.use("/api/v1/healthCheck", healthCheckRouter);
